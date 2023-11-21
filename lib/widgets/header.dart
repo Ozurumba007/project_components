@@ -1,11 +1,7 @@
-import 'dart:html' as html;
-
 import 'package:flutter/material.dart';
 
 class Header extends StatefulWidget {
-  final void Function() onBuyHeaderTap;
-
-  const Header({required this.onBuyHeaderTap, super.key});
+  const Header({super.key});
 
   @override
   State<Header> createState() => _HeaderState();
@@ -35,15 +31,13 @@ class _HeaderState extends State<Header> {
                     // html.window.open(HomeScreen.routeName, '_self');
                   },
                   child: Image.asset(
-                    'assets/realte_logo_dark_background.png',
+                    'assets/realte_logo_white_background.png',
                     width: 92 * fem,
                   ),
                 ),
                 const Spacer(),
                 TextButton(
-                  onPressed: () {
-                    widget.onBuyHeaderTap();
-                  },
+                  onPressed: () {},
                   child: Text(
                     'Buy',
                     style: TextStyle(
