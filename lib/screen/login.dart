@@ -1,3 +1,4 @@
+import 'package:components/screen/coming_soon.dart';
 import 'package:components/screen/login_signup.dart';
 import 'package:flutter/material.dart';
 
@@ -15,13 +16,13 @@ class _LoginState extends State<Login> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            Header(),
-            LoginScreen(),
-          ],
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          ComingSoon(),
+          // Header(),
+          // LoginScreen(),
+        ],
       ),
     );
   }
